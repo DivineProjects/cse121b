@@ -1,9 +1,30 @@
 /* LESSON 3 - Programming Tasks */
 
+
 /* FUNCTIONS */
+
+// check if a value is a float
+function isFloat(value) {
+    if (
+      typeof value === 'number' &&
+      !Number.isNaN(value) && value == ""
+    ) {
+      return true;
+    }
+    
+    return false;
+  }
+
 /* Function Definition - Add Numbers */
 function add(number1,number2){
-    return number1 + number2;
+    if(isFloat(number1) == true || isFloat(number2) == true){
+        alert("Number must be filled out");
+        
+        return "";
+    }
+    else{
+        return number1 +  number2;
+    }
 }
 
 function addNumbers(){
@@ -18,7 +39,14 @@ document.querySelector("#addNumbers").addEventListener("click",addNumbers);
 /* Function Expression - Subtract Numbers */
 
 function subtract(number1, number2) {
-    return number1 - number2;
+    if(isFloat(number1) == true || isFloat(number2) == true){
+        alert("Number must be filled out");
+
+        return "";
+    }
+    else{
+        return number1 - number2;
+    }
 }
 
 function subtractNumbers(){
@@ -30,7 +58,13 @@ document.querySelector("#subtractNumbers").addEventListener("click",subtractNumb
 
 /* Arrow Function - Multiply Numbers */
 function multiply(number1, number2) {
-    return number1 * number2;
+    if(isFloat(number1) == true || isFloat(number2) == true){
+        alert("Number must be filled out");
+        return "";
+    }
+    else{
+        return number1 * number2;
+    }
 }
 
 function multiplyNumbers(){
@@ -42,7 +76,14 @@ document.querySelector("#multiplyNumbers").addEventListener("click",multiplyNumb
 
 /* Open Function Use - Divide Numbers */
 function divide(number1, number2) {
-    return number1 / number2;
+    if(isFloat(number1) == true || isFloat(number2) == true){
+        alert("Number must be filled out");
+
+        return "";
+    }
+    else{
+        return number1 / number2;
+    }
 }
 
 function divideNumbers(){
@@ -70,6 +111,8 @@ function total(){
     }
     
 }
+
+
 
 document.querySelector("#getTotal").addEventListener("click",total);
 
