@@ -125,7 +125,7 @@ document.querySelector("#array").innerHTML = numbersArray;
 document.querySelector("#odds").innerHTML = numbersArray.filter(number => number %2 === 1);
 
 /* Output Evens Only Array */
-document.querySelector("#evens").innerHTML = numbersArray.filter(value => value %2 ===1);
+document.querySelector("#evens").innerHTML = numbersArray.filter(value => value %2 ===0);
 
 /* Output Sum of Org. Array */
 document.querySelector("#sumOfArray").innerHTML = numbersArray.reduce((sum, number) => sum + number);
