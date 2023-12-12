@@ -1,0 +1,97 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* HTML Selectors */
+body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    background-color: black;
+}
+
+
+picture {
+    margin: 0 auto;
+}
+
+img {
+    width: 240px;
+    height: 200px;
+    border-radius: 5%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 30px #777;
+}
+
+
+#cats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: .5rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#cats article {
+    height: 400px;
+    margin: .5rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: rgb(169, 172, 173);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cats img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 30px #777;
+    margin: .5rem;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 20px;
+  }
+
+  .image-item {
+    width: 100%;
+    height: 200;
+  }
+
+div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+button {
+    padding: 10px;
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #cuteButton {
+    background-color: rgb(231, 76, 60);
+  }
+
+  #funnyButton {
+    background-color: #2ecc71;
+  }
+
+  #sleepyButton {
+    background-color: #f39c12;
+  }
+
+  #playButton {
+    background-color: #9b59b6;
+  }
+
+
